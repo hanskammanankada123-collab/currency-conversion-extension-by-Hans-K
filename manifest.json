@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Universal Currency Converter",
+  "version": "3.0.0",
+  "description": "Converts any currency on webpages into your chosen currency using live exchange rates.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
